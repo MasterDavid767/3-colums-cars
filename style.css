@@ -21,17 +21,20 @@ main{
     color: white;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .article{
     padding: 30px 16px;
 }
 
 
-
+.article img{
+    max-width: 70px;
+}
 .title{
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
-    margin: .6cm 0 1cm;
+    margin: .6cm 0;
     font-size: 1.8rem;
 }
 .sedans{
@@ -50,8 +53,11 @@ main{
     font-size: 300;
     margin: .7cm 0 ;
 }
-
-.article a{
+.link{
+    position: relative;
+    bottom: 0;
+}
+.link a{
     display: block;
     max-width: 150px;
     text-decoration: none;
@@ -61,10 +67,14 @@ main{
     border-radius: 1em;
     text-align: center;
 
-    position: relative;
-    bottom: 0;
-
+    
 }
+.article a:active{
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
 .sedans a{
     color: hsl(31, 77%, 52%);
 
